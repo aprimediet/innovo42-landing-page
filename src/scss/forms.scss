@@ -1,0 +1,9 @@
+.forms {
+  &--rounded {
+    border-radius: 100px;
+  }
+
+  &--primary {
+    border: solid 1px $primary;
+  }
+}

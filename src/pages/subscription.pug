@@ -1,0 +1,10 @@
+extends ../shared/base.pug
+
+block content
+  .d-flex.flex-column.bg-white.align-items-center.justify-content-center.pricing--pricelist
+    .d-flex.flex-column.align-items-center.justify-content-center.pricing--banner
+      h3.pricing--heading.text-secondary Empowering the way you work
+
+    include ./subscription/wizard.pug
+
+    include ./subscription/plan.pug

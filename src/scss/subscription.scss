@@ -1,0 +1,91 @@
+.subscription {
+  &--wizard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 48px;
+      color: $secondary;
+      min-width: 150px;
+      width: 150px;
+      max-width: 150px;
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        border: 1px solid $secondary;
+      }
+
+      .caption {
+        text-align: center;
+      }
+
+      &:not(:first-child) {
+        margin-top: -4px;
+      }
+
+      &:not(:first-child)::before {
+        content: "";
+        position: relative;
+        min-width: 170px;
+        top: 28px;
+        right: 122px;
+        border-bottom: 4px dotted $secondary;
+      }
+
+      // &:last-child {
+      //   margin-top: 62px;
+      // }
+    }
+
+    .active {
+      .title {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
+  }
+
+  &--plan {
+    width: 40%;
+  }
+
+  &--payment {
+    width: 70%;
+  }
+}
+
+.braintree {
+  &--wrapper {
+    flex: 1;
+    border: 1px solid $gray-500;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  &--header {
+    padding: 16px;
+    border-bottom: 1px solid $gray-500;
+  }
+
+  &--title {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  &--body {
+    margin: 16px;
+  }
+}

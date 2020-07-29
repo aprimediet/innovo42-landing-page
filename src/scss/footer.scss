@@ -1,0 +1,52 @@
+$footer-background-color: #DFE4EA;
+
+.footer {
+  width: 100%;
+  padding: 36px 10%;
+  background-color: $footer-background-color;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 200%;
+
+  &-children {
+    flex: 1;
+  }
+
+  &-copyright {
+    font-size: 11px;
+  }
+
+  &-sitemap {
+    &-link-text {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: $yiq-text-dark;
+
+      &:hover {
+        color: $yiq-text-dark;
+      }
+    }
+  }
+
+  &-img {
+    &-apple {
+      max-width: 150px;
+    }
+
+    &-google {
+      max-width: 152px;
+    }
+  }
+
+  &-newsletter {
+    &-forms {
+      border-radius: 100px;
+    }
+
+    &-input {
+      padding: 20px;
+      background: none !important;
+    }
+  }
+}

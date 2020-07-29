@@ -1,0 +1,66 @@
+.pricing {
+  &--pricelist {
+    flex: 1;
+    padding: 54px 10% 30px 10%;
+    margin-top: -30px;
+    min-height: 100%;
+    width: 100%;
+    background-size: 90% 80%;
+    background-repeat: no-repeat;
+    background-position: center 54px;
+    background-image: url('images/pricing-background.png');
+  }
+
+  &--banner {
+    margin: 10% 0;
+  }
+
+  &--heading {
+    font-size: 40px;
+    line-height: 200%;
+  }
+
+  &--subtitle {
+    font-size: 18px;
+  }
+
+  &--selector {
+    flex: 1;
+    width: 70%;
+  }
+
+  &--card {
+    flex: 1;
+    border-radius: 25px;
+    border: solid 1px lightgrey;
+    box-shadow: 2px 2px 2px lightgrey;
+  }
+
+  &--title {
+    font-size: 20px;
+  }
+
+  &--price {
+    font-size: 35px;
+  }
+
+  &--features {
+    li {
+      list-style-type: none;
+      // max-height: 16px;
+      // list-style-image: url('images/pricing-check.png');
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 8px;
+        width: 13px;
+        margin-right: 8px;
+        background-image: url('images/pricing-check.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

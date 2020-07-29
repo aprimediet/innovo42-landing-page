@@ -1,0 +1,19 @@
+.d-flex.flex-column.subscription--payment
+  .d-flex.flex-column.braintree--wrapper
+    .braintree--header
+      h3.braintree--title Pay with card
+    .d-flex.flex-column.braintree--body
+      .d-flex.flex-row
+        .form-group
+          label Card Number
+          input.form-control(type="text", placeholder="****-****-****")
+      .form-row
+        .col
+          label Expiration Date
+          input.form-control(type="text", placeholder="MM/YY")
+        .col
+          label CVV
+          input.form-control(type="text", placeholder="***")
+
+  a(href="subscription-payment.html")
+    button.btn.btn-primary.btn-block.forms--rounded Next
