@@ -10,9 +10,10 @@ html(lang='en')
     link(rel="stylesheet", href="main.css")
   body
     include ./header.pug
-    block content
+    .d-flex.flex-column.wrapper
+      block content
 
-    include ./footer.pug
+      include ./footer.pug
 
     script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
     script.

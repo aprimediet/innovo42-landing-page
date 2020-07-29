@@ -48,6 +48,7 @@ function sharedHtml () {
     .src(`${src}/shared/**/*.pug`)
     .pipe(newer(dist))
     .pipe(pug())
+    .pipe(prettyHtml())
     .pipe(gulp.dest(`${dist}/shared`))
 }
 
@@ -94,4 +95,4 @@ exports.html = gulp.series(images, html, sharedHtml)
 exports.css = gulp.series(images, css)
 exports.build = gulp.series(clean, exports.html, exports.css)
 exports.watch = watch
-exports.default = gulp.series(exports.build, runBrowser, exports.watch)
+exports.default = gulp.series(exports.build, exports.watch, runBrowser)
