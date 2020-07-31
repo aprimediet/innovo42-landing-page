@@ -1,0 +1,28 @@
+mixin main-banner-left-align(logo = null, title, subtitle, captions, image = null, includeButton = false, buttonUrl = null, buttonLabel = null)
+  .d-flex.flex-column.content--wrapper.banner-main--left-align
+    .d-flex.flex-row.content--container.py-5
+      .d-flex.flex-column
+        .d-flex.flex-row.banner-main--title
+          if logo
+            img.banner-main--logo(src=logo, alt=title)
+          .d-flex.flex-column
+            each text, index in title.split(' ')
+              if index === 0
+                h1.fonts--arvo.text-secondary.banner-main--title-text-1
+                  = text
+              else if index === 1
+                h1.fonts--arvo.text-secondary.banner-main--title-text-2
+                  = text
+        p.fonts--arvo.text-secondary.banner-main--subtitle
+          = subtitle
+        hr.my-1
+        p.my-1.banner-main--captions
+          = captions
+        if (includeButton)
+          hr.my-3
+          a(buttonUrl)
+            button.btn.btn-secondary.btn-lg.forms--rounded
+              = buttonLabel
+      if image
+        .d-none.d-lg-flex.d-xl-flex.flex-row.banner-main--images-container
+          img.banner-main--images(src=image, alt=title)

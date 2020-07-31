@@ -8,6 +8,7 @@
 // Content
 @import "./pricing.scss";
 @import "./subscription.scss";
+@import "./banner.scss";
 
 html, body {
   font-family: $font-family-sans-serif;
@@ -17,14 +18,23 @@ html, body {
   background-color: $white;
 }
 
+.fonts {
+
+  &--arvo {
+    font-family: $font-family-arvo;
+  }
+}
+
 .content {
   &--wrapper {
-    width: 100%;  
+    min-width: 100%;
+    min-height: 100%;
   }
 
   &--container {
     padding: 0 10%;
     min-width: 80%;
+    flex: 1;
   }
 
   &--jumbotron {
@@ -33,13 +43,13 @@ html, body {
 }
 
 .wrapper {
-  // padding: 0 10%;
-  // min-width: 100% - 20%;
   flex: 1;
   margin-top: 60px;
   min-width: 100%;
   width: 100%;
-  min-height: 100%;
+  min-height: calc(100% - 60px);
+  height: calc(100% - 60px);
+  overflow-y: visible;
 }
 
 .icon {

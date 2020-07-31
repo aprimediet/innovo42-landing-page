@@ -1,0 +1,29 @@
+{
+  "siteTitle": "Innovo42",
+  "companyMail": "info@innovo42.com",
+  "linkedinLink": "https://linkedin.com/company/innovo42/about",
+  "twitterLink": "https://twitter.com/Innovo42_SG",
+  "facebookLink": "https://facebook.com/innovo42",
+  "mediumLink": "https://medium.com/innovo42",
+  "mapAddress": "https://goo.gl/maps/55ZZUsZtog72",
+  "appStoreLink": "https://itunes.apple.com/sg/app/innovo-xpense/id1363835590?mt=8",
+  "playStoreLink": "https://play.google.com/store/apps/details?id=com.innovo42.www.skieexpenseapp",
+  "sitemap": [
+    {
+      "label": "About Us",
+      "href": "javascript:;"
+    },
+    {
+      "label": "Blog",
+      "href": "https://blog.innovo42.com"
+    },
+    {
+      "label": "Technology",
+      "href": "javascript:;"
+    },
+    {
+      "label": "Resources",
+      "href": "javascript:;"
+    }
+  ]
+}

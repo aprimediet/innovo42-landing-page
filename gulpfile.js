@@ -1,7 +1,9 @@
 const devBuild = (process.env.NODE_ENV !== 'production'),
+      fs = require('fs'),
       src = './src',
       dist = './dist',
       gulp = require('gulp'),
+      data = require('gulp-data'),
       noop = require('gulp-noop'),
       newer = require('gulp-newer'),
       imagemin = require('gulp-imagemin'),
@@ -38,6 +40,9 @@ function html () {
   return gulp
     .src(`${src}/pages/**/*.pug`)
     .pipe(newer(dist))
+    .pipe(data(() => {
+      return JSON.parse(fs.readFileSync(`${src}/data/main.json`))
+    }))
     .pipe(pug())
     .pipe(devBuild ? prettyHtml() : htmlClean())
     .pipe(gulp.dest(dist))
@@ -47,6 +52,9 @@ function sharedHtml () {
   return gulp
     .src(`${src}/shared/**/*.pug`)
     .pipe(newer(dist))
+    .pipe(data(() => {
+      return JSON.parse(fs.readFileSync(`${src}/data/main.json`))
+    }))
     .pipe(pug())
     .pipe(prettyHtml())
     .pipe(gulp.dest(`${dist}/shared`))
@@ -74,7 +82,8 @@ function css () {
 }
 
 function watch (done) {
-  gulp.watch('**/*.pug', html)
+  gulp.watch(`${src}/data/**/*.json`, gulp.parallel(html, sharedHtml))
+  gulp.watch('**/*.pug', gulp.parallel(html, sharedHtml))
   gulp.watch('**/*.scss', css)
 
   done()
