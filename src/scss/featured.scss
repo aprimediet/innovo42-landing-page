@@ -1,0 +1,45 @@
+.featured {
+  &--wrapper {
+    max-width: 100%;
+  }
+
+  &--container {
+    flex: 1;
+  }
+
+  &--title {
+    font-size: 24px;
+  }
+
+  &--caption {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &--images {
+    max-width: 200px;
+    max-height: 150px;
+  
+    &-container {
+      width: 33%;
+    }
+  }
+
+  &--darker-bg {
+    background-color: $gray-100;
+  }
+
+  &-center {
+    &--images {
+      max-width: 90%;
+      &--container {
+        flex: 1;
+        max-width: 50%;
+      }
+    }
+
+    &--container {
+      flex: 1;
+    }
+  }
+}

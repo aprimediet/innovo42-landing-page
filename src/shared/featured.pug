@@ -1,0 +1,29 @@
+mixin featured-right-align(image = null, title = null, caption)
+  .d-flex.flex-row-reverse.featured--wrapper
+    .d-flex.flex-column.featured--container
+      h3.fonts--arvo.text-secondary.featured--title
+        = title
+      hr.my-1
+      - var captions = caption.split('<spacing>')
+      each capt in captions
+        p.featured--caption
+          = capt
+    if image
+      .d-flex.flex-row.justify-content-center.align-items-center.featured--images-container
+        img.featured--images(src=image, alt='Featured Image')
+  hr.my-5
+
+mixin featured-left-align(image = null, title = null, caption)
+  .d-flex.flex-row.featured--wrapper
+    .d-flex.flex-column.featured--container
+      h3.fonts--arvo.text-secondary.featured--title
+        = title
+      hr.my-1
+      - var captions = caption.split('<spacing>')
+      each capt in captions
+        p.featured--caption
+          = capt
+    if image
+      .d-flex.flex-row.justify-content-center.align-items-center.featured--images-container
+        img.featured--images(src=image, alt='Featured Image')
+  hr.my-5

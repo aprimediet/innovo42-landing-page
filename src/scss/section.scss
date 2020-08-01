@@ -1,0 +1,14 @@
+.section {
+  &--title {
+    font-size: 35px;  
+  }
+
+  &--title-line {
+    max-width: 300px;
+  }
+
+  &--caption {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
