@@ -7,3 +7,10 @@
     border: solid 1px $primary;
   }
 }
+
+.buttons {
+  &--bigger {
+    padding: .5rem 48px;
+    font-weight: 600;
+  }
+}
