@@ -1,0 +1,37 @@
+.banner {
+  &-bg {
+    top: $header-height;
+    position: absolute;
+    height: 719px;
+    z-index: -1;
+
+    &--left-align {
+      background-image: url("images/banner-bg-splash6.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &-images {
+    &--container {
+      width: 60%;
+      height: 85%;
+    }
+  }
+}
+
+@media (min-width: 120rem) {
+  .banner {
+    &-bg {
+      top: $header-height * 2;
+      height: 1232px;
+    }
+  }
+}
+
+@media (min-width: 160rem) {
+  .banner {
+    &-bg {
+      height: 1438px;
+    }
+  }
+}

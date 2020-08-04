@@ -1,4 +1,15 @@
 extends ../shared/base.pug
 
+include ../shared/banner.pug
+
 block content
-  button.btn.btn-primary Test
+  +main-banner-left-align(
+    'images/innovo42-api-logo.png',
+    'INNOVO API',
+    'Seamless API Integration to Process Receipts and Invoices',
+    'Integrate our solution with your systems. Leverage our functionalities and infrastructure to take your applications to the next level.',
+    'images/banner-api.png',
+    true,
+    'javascript:;',
+    'TALK TO US'
+  )

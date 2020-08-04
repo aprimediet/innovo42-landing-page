@@ -1,3 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  margin: 0;
+  background-color: $white;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  height: calc(100% - 60px);
+}
+
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -6,4 +20,18 @@
 .mx-10p {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.wrapper {
+  margin-top: $header-height !important;
+}
+
+@media(min-width: 120rem) {
+  body {
+    height: calc(100% - 120px);
+  }
+
+  .wrapper {
+    margin-top: $header-height * 2 !important;
+  }
 }

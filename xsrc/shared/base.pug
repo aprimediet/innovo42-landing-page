@@ -9,10 +9,10 @@ html(lang='en')
       =siteTitle
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     link(rel="stylesheet", href="main.css")
-  body
+  body.w-100
     include ./header.pug
 
-    .d-flex.flex-column
+    .d-flex.flex-column.w-100.h-100.wrapper
       block content
 
     script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
