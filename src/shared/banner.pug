@@ -1,7 +1,7 @@
 mixin main-banner-left-align(logo = null, title, subtitle, captions, image = null, includeButton = false, buttonUrl = null, buttonLabel = null)
   .d-flex.flex-column.content--wrapper.banner-main--left-align
     .d-flex.flex-row.content--container.py-5
-      .d-flex.flex-column
+      .d-flex.flex-column.justify-content-center
         .d-flex.flex-row.banner-main--title
           if logo
             img.banner-main--logo(src=logo, alt=title)

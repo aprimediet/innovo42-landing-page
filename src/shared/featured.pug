@@ -27,3 +27,15 @@ mixin featured-left-align(image = null, title = null, caption)
       .d-flex.flex-row.justify-content-center.align-items-center.featured--images-container
         img.featured--images(src=image, alt='Featured Image')
   hr.my-2
+
+mixin featured-bordered-right-align(image = null, title = null, caption)
+  .d-flex.flex-row.featured--wrapper.featured-bordered--wrapper.py-4
+    .d-flex.flex-column.align-items-center.justify-content-center.featured-bordered--images-container
+      img.featured-bordered--images(src=image)
+    .d-flex.flex-column.justify-content-center.pr-5
+      h3.fonts--arvo.text-secondary.featured--title.mb-3
+        = title
+      - var captions = caption.split('<spacing>')
+        each capt in captions
+          p.featured--caption.text-justify
+            = capt
