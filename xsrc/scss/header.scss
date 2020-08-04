@@ -39,6 +39,37 @@ $header-height: 60px;
   text-transform: uppercase;
 }
 
+@media(min-width: 120rem) {
+  .header {
+    &-menu {
+      &--item {
+        line-height: 2.5;
+        font-size: 1.125rem;
+        height: $header-height * 2 !important;
+      }
+    }
+
+    &--wrapper {
+      height: $header-height * 2 !important;
+    }
+
+    &--logo {
+      max-width: 286px !important;
+      height: $header-height !important;
+    }
+
+    &--vertical-divider {
+      width: 3px;
+      height: $header-height !important;
+    }
+  }
+
+  .btn-login {
+    font-size: 1.125rem;
+    margin-top: 0 !important;
+  }
+}
+
 @media(min-width: 160rem) {
   .header {
     &-menu {

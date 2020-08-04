@@ -5,6 +5,12 @@
   min-height: 0vw;
 }
 
+@media(min-width: 120rem) {
+  :root {
+    font-size: 1.125rem;
+  }
+}
+
 @media(min-width: 160rem) {
   :root {
     font-size: 1.25rem;
