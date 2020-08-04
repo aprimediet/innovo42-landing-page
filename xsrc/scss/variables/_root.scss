@@ -1,0 +1,12 @@
+:root {
+  // Setting responsive font size
+  // font-size: clamp(1rem, calc(1rem + ((1vw - .48rem) * 1.389)), 2rem);
+  font-size: 1rem;
+  min-height: 0vw;
+}
+
+@media(min-width: 160rem) {
+  :root {
+    font-size: 1.25rem;
+  }
+}

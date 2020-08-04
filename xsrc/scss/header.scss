@@ -1,0 +1,71 @@
+$header-height: 60px;
+
+.header {
+  &-menu {
+    &--item {
+      height: $header-height;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: $secondary;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: solid 3px $primary;
+        color: $secondary !important;
+      }
+    }
+  }
+
+  &--wrapper {
+    height: $header-height;
+  }
+
+  &--logo {
+    max-width: 143px !important;
+    height: $header-height/2 !important;
+  }
+
+  &--vertical-divider {
+    width: 2px;
+    height: $header-height / 2 !important;
+    background-color: $primary;
+  }
+}
+
+.btn-login {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media(min-width: 160rem) {
+  .header {
+    &-menu {
+      &--item {
+        line-height: 2.5;
+        font-size: 1.25rem;
+        height: $header-height * 2 !important;
+      }
+    }
+
+    &--wrapper {
+      height: $header-height * 2 !important;
+    }
+
+    &--logo {
+      max-width: 286px !important;
+      height: $header-height !important;
+    }
+
+    &--vertical-divider {
+      width: 3px;
+      height: $header-height !important;
+    }
+  }
+
+  .btn-login {
+    font-size: 1.25rem;
+    margin-top: 0 !important;
+  }
+}
