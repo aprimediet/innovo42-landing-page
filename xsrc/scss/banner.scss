@@ -1,8 +1,11 @@
+$logo-width: 112px;
+$logo-height: 116px;
+
 .banner {
   &-bg {
     top: $header-height;
     position: absolute;
-    height: 719px;
+    height: 110%;
     z-index: -1;
 
     &--left-align {
@@ -11,11 +14,49 @@
       background-repeat: no-repeat;
     }
   }
+
   &-images {
     &--container {
-      width: 60%;
-      height: 85%;
+      min-width: 55%;
+      width: 55%;
+      height: 80%;
     }
+  }
+
+  &-logo {
+    width: $logo-width;
+    height: $logo-height;
+  }
+
+  &-text {
+    &--title {
+      &-1 {
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+      }
+
+      &-2 {
+        font-size: 4.375rem;
+        line-height: 3.4375rem;
+      }
+    }
+
+    &--subtitle {
+      font-size: 2rem;
+    }
+
+    &--caption {
+      font-size: 1.125rem;
+      line-height: 1.5;
+    }
+  }
+
+  &--wrapper {
+    min-height: 100% !important;
+  }
+
+  &--button {
+    font-weight: 600;
   }
 }
 
@@ -23,15 +64,78 @@
   .banner {
     &-bg {
       top: $header-height * 2;
-      height: 1232px;
+    }
+
+    &-logo {
+      width: $logo-width * 1.5;
+      height: $logo-height * 1.5;
+    }
+
+    &-images {
+      &--container {
+        height: 70%;
+      }
+    }
+
+    &-text {
+      &--title {
+        &-1 {
+          font-size: 3.5rem;
+          line-height: 4rem;
+        }
+  
+        &-2 {
+          font-size: 5rem;
+          line-height: 4rem;
+        }
+      }
+  
+      &--subtitle {
+        font-size: 2.5rem;
+      }
+
+      &--caption {
+        font-size: 1.5rem;
+      }
+    }
+
+    &--button {
+      font-size: 1.25rem;
     }
   }
 }
 
 @media (min-width: 160rem) {
   .banner {
-    &-bg {
-      height: 1438px;
+    &-logo {
+      width: $logo-width * 2;
+      height: $logo-height * 2;
+    }
+
+    &-text {
+      &--title {
+        &-1 {
+          font-size: 4.5rem;
+          line-height: 5rem;
+        }
+  
+        &-2 {
+          font-size: 6rem;
+          line-height: 5rem;
+        }
+      }
+  
+      &--subtitle {
+        font-size: 3rem;
+      }
+
+      &--caption {
+        font-size: 1.75rem;
+      }
+    }
+
+    &--button {
+      font-size: 1.5rem;
     }
   }
 }

@@ -32,4 +32,4 @@ WORKDIR /usr/www/html
 # COPY NGINX PRODUCTION SCRIPT
 # ADD deploy /
 
-COPY --from=0 /usr/local/app/dist/ ./
+COPY --from=0 /usr/local/app/xdist/ ./

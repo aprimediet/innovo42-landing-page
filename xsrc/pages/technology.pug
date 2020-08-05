@@ -1,0 +1,89 @@
+extends ../shared/base.pug
+
+include ../shared/banner.pug
+include ../shared/section.pug
+
+block content
+  +main-banner-left-align(
+    null,
+    'OUR TECHNOLOGY',
+    null,
+    `
+      We have a multi-layered framework to harness the combined power of machine learning algorithms, 
+      OCR, and a series of validation processes to make invoice and expense handling more efficient.
+    `,
+    'images/banner-tech.png',
+    true,
+    'javascript:;',
+    'TRY OUR PRODUCT!'
+  )
+
+  .d-flex.flex-column.px-10p.align-items-center
+    +section-title('Our In-House Multi Layered Framework')
+
+    hr.my-4
+
+    img.d-none.d-xl-flex.section--image-large(src='images/framework.png')
+
+    hr.my-4
+
+    +featured-right-align(
+      'images/ocr.png',
+      'Digitise Invoices Through OCR',
+      `While using OCR technology has its challenges,
+      OCR is still a critical first step in extracting data from images.
+      We use a combination of best-in- class and internally developed
+      OCR solutions to convert images of documents into text.
+      Our in-built algorithms adjust the submitted images to ensure
+      that we get the best possible results from the OCR conversions`
+    )
+
+    hr.my-3.my-xxl-4
+
+    +featured-right-align(
+      'images/machine-learning.png',
+      'Natural Language Processing (NLP)',
+      `The text obtained from the OCR conversion is fed into the NLP models.
+       These statistical models drive the relevant data classification and extraction. <spacing>
+       The statistical models also help to overcome the issue of the various formats
+       that invoices and receipts have. Instead of trying to pinpoint where data is on
+       a particular document, like in traditional OCR solutions, with NLP, an understanding
+       of this document is built in order to extract the relevant data.
+      `
+    )
+
+    hr.my-3.my-xxl-4
+
+    +featured-right-align(
+      'images/business-validation.png',
+      'Leverage a Layered Business Validation Process',
+      `After NLP has driven the relevant data classification and extraction,
+      logical/business validation adds an extra layer of checks to ensure data is
+      captured accurately. <spacing>
+      Examples of business validation include checking if a transaction date
+      is not in the future or if the tax amount is the correct percentage
+      of the total amount. <spacing>
+      As business validations apply deterministic rules on the outcomes of stochastic models,
+      the accuracy of the output is greatly increased.
+      `
+    )
+
+    hr.my-3.my-xxl-4
+
+    +featured-right-align(
+      'images/exception-management.png',
+      'Handle Exceptions In-House',
+      `A robust exception handling process with algorithmic intervention
+      based on insights from the collected data acts as a last line of defence. <spacing>
+      If the confidence levels provided by the NLP models are lower than required
+      or logical/business validations fail, the invoices or receipt will be sent
+      to an operator for closer attention. <spacing>
+      These processes ensure clients get the most accurate data possible
+      which can be used with no extra verification. <spacing>
+      Also, this process ensures that issues detected are used to correct
+      and configure the NLP  models and logical/business validation rules.
+      This process continuously improves accuracy of the solution via iterative learning.
+      `
+    )
+
+    hr.my-3.my-xxl-4

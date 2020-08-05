@@ -1,8 +1,35 @@
-mixin main-banner-left-align(logo = null, title, subtitle, captions, image = null, includeButton = false, buttonUrl = null, buttonLabel = null)
+mixin main-banner-left-align(logo = null, titles, subtitle, captions, image = null, includeButton = false, buttonUrl = 'javascript:;', buttonLabel = null)
   .w-100.banner-bg.banner-bg--left-align
-  .d-flex.flex-row.w-100.h-100.px-10p.align-items-center
+  .d-flex.flex-row.w-100.h-100.px-10p.align-items-center.banner--wrapper
     .d-flex.flex-column.mr-auto
-      h1 Hey 
+      //- LOGO AND TITLE
+      .d-flex.flex-row
+        if logo
+          img.banner-logo(src=logo, alt=title)
+        .d-flex.flex-column.mr-auto
+          each title, index in titles.split(' ')
+            if index === 0
+              h1.fonts--arvo.text-secondary.banner-text--title-1
+                = title
+            else if index === 1
+              h1.fonts--arvo.text-secondary.banner-text--title-2
+                = title
+      hr.my-3
+      //- SUBTITLE
+      h2.fonts--arvo.text-secondary.banner-text--subtitle
+        = subtitle
+      hr.my-1
+      //- CAPTION
+      p.banner-text--caption
+        = captions
+      //- BUTTON
+      if (includeButton)
+        hr.my-2
+        a(href=buttonUrl)
+          button.btn.btn-secondary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button
+            = buttonLabel
+
+    //- BANNER IMAGE
     if image
       .d-none.d-xl-flex.flex-column.banner-images--container
         img.w-100.h-100(src=image, alt=title)

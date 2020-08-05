@@ -1,0 +1,18 @@
+.cta {
+  min-height: 15.875rem;
+  background-image: url('images/cta.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+@media(min-width: 120rem) {
+  .cta {
+    min-height: 17.875rem;
+  }
+}
+
+@media(min-width: 160rem) {
+  .cta {
+    min-height: 19.875rem;
+  }
+}

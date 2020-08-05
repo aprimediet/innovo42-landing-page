@@ -1,6 +1,7 @@
 extends ../shared/base.pug
 
 include ../shared/banner.pug
+include ../shared/section.pug
 
 block content
   +main-banner-left-align(
@@ -13,3 +14,111 @@ block content
     'javascript:;',
     'TALK TO US'
   )
+
+  .d-flex.flex-column.px-10p.mx-10p.text-center
+    +section-title('Our API Solution')
+
+    hr.my-3
+
+    p.banner-text--caption The Innovo API is a RESTful web service which can be seamlessly integrated into your organisation's mobile or web applications.
+
+    hr.my-2
+
+    p.banner-text--caption The API combines Innovo42’s OCR, machine learning and validation technologies to accurately extract data from receipts and invoices. The data extracted by the API can be delivered in a customised manner to fit your application’s requirements.
+
+    hr.my-2.my-xxl-3
+
+  .d-flex.flex-column.px-10p
+    +section-title('Benefits')
+
+    hr.my-3
+
+    +section-right-align(
+      'images/fast-accurate-processing.png',
+      'Fast & Accurate Processing',
+      `
+        Innovo API’s data extraction technology converts receipts and invoices into structured data thanks to our in-house multi-layered framework which harnesses the combined power of machine learning algorithms, OCR, and a series of validation processes to make invoice and expense handling more efficient. <spacing>
+        For you, it’s as simple as taking a photo with a smartphone and sending it to us. 
+      `)
+
+    hr.my-2.my-xxl-3
+
+    +section-left-align(
+      'images/easy-integration.png',
+      'Easy Integration With Your Own Applications',
+      `
+        Innovo API can be securely and easily integrated into third-party applications. Our dynamic endpoint allows you to handle a wide range of web requests. You can manage authorization by an access token, which is submitted with each request.
+      `)
+
+    hr.my-2.my-xxl-3
+
+    +section-right-align(
+      'images/no-limitations.png',
+      'No Templates, No Limitations',
+      `
+        Traditional OCR solutions heavily depend on pre-defined rules or templates for each document type. Innovo API’s technology is able to extract and validate information from a wide range of documents without the need of pre-defined templates.
+      `)
+
+    hr.my-2.my-xxl-3
+
+    +section-left-align(
+      'images/flexible-delivery.png',
+      'Flexible Delivery',
+      `
+        Innovo API supports direct response to web requests. Besides API calls, the Innovo API provides webhooks that allow you to subscribe to specific events. The API  can send HTTP requests to endpoints that you configure when an event occurs.
+      `)
+
+    hr.my-2.my-xxl-3
+
+    +section-right-align(
+      'images/industry-versatility.png',
+      'Industry Versatility',
+      `
+        Our automated document management, processing, classification and data extraction solution brings value to companies from a wide range of sectors, including insurance, accountancy, financial services, loyalty and F&B.
+      `)
+    
+    hr.my-2.my-xxl-3
+
+  .d-flex.flex-column.px-10p.py-5.section--darker-bg.justify-content-center
+    +section-title('Our Technology')
+
+    hr.my-2.my-xxl-3
+
+    .d-flex.flex-row.align-items-center
+      img.d-none.d-xl-flex.section--image-large(src='images/our-technology.png', alt='Our Technology')
+      .d-flex.flex-column.justify-content-center.pl-xl-5
+        p.banner-text--caption Our applications can extract key information from receipts and invoices such as total amount, tax amount, date, reference number, receipt/invoice number, etc.
+
+        p.banner-text--caption We run stringent validation processes to ensure data is captured accurately.
+
+        p.banner-text--caption With full documentation and personalised integration support, Innovo API can be seamlessly deployed into your own applications and be branded as your own solution.
+
+        hr.my-2.my-xxl-3
+
+        a(href="javascript:;")
+          button.btn.btn-primary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button LEARN MORE!
+
+  .d-flex.flex-column.px-10p.py-5
+    +section-title('How We Operate')
+
+    hr.my-sm-4.my-2.my-xxl-3
+
+    .d-flex.flex-column.flex-lg-row
+      .d-flex.flex-column.align-items-center.justify-content-center.mx-auto.text-center.px-lg-5
+        img.section--image-large(src='images/quick-response.png', alt='Quick Response')
+        h3.fonts--arvo.text-secondary.section-text--subtitle Quick Response
+        hr.my-1
+        p.banner-text--caption Quick response, where an image is posted via an API call and the response (extracted data) is received within seconds. Data extraction will be done to accommodate speed.
+        hr.my-1
+      .d-flex.flex-column.align-items-center.justify-content-center.mx-auto.text-center.px-lg-5
+        img.section--image-large(src='images/verifies-response.png', alt='Quick Response')
+        h3.fonts--arvo.text-secondary.section-text--subtitle Verified Response
+        hr.my-1
+        p.banner-text--caption Verified response, where an image is posted via an API call and the response (extracted data) is posted to an end-point after several minutes. Data extracted will be verified to ensure accuracy.
+        hr.my-1
+
+  .d-flex.flex-column.justify-content-center.align-items-center.cta.text-center
+    h3.fonts--arvo.banner-text--subtitle.text-white We’d like to understand how we can help you!
+    hr.my-3
+    a(href="javascript:;")
+       button.btn.btn-primary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button TALK TO US

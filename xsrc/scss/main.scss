@@ -44,6 +44,10 @@
 @import "../../node_modules/bootstrap/scss/_print.scss";
 
 // Import all here
+@import "./fonts.scss";
 @import "./layout.scss";
 @import "./header.scss";
 @import "./banner.scss";
+@import "./section.scss";
+@import "./cta.scss";
+@import "./footer.scss";

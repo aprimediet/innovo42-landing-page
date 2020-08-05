@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development gulp build",
-    "build": "cross-env NODE_ENV=production gulp build",
+    "dev": "cross-env NODE_ENV=development gulp xBuild",
+    "build": "cross-env NODE_ENV=production gulp xBuild",
     "watch": "cross-env NODE_ENV=development gulp"
   },
   "devDependencies": {
