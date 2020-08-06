@@ -6,29 +6,31 @@ mixin section-title(title=null)
 
 mixin section-left-align(image = null, title = null, captions)
   .d-flex.flex-row.align-items-center.px-5
-    .d-flex.flex-column.pr-md-5
-      h3.fonts--arvo.text-secondary.section-text--subtitle
+    .d-flex.flex-column.px-md-5.w-50
+      h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
-      hr.my-1
+      hr.my-2
       - var _captions = captions.split('<spacing>')
       each caption in _captions
         p.banner-text--caption.text-justify
           = caption
-    if image
-      img.d-none.d-md-flex.section--image.ml-auto(src=image, alt=title)
+    .d-none.d-md-flex.flex-column.w-50.ml-auto
+      if image
+        img.w-80.ml-auto(src=image, alt=title)
 
 mixin section-right-align(image = null, title = null, captions)
   .d-flex.flex-row-reverse.align-items-center.px-5
-    .d-flex.flex-column.pl-md-5
-      h3.fonts--arvo.text-secondary.section-text--subtitle
+    .d-flex.flex-column.px-md-5.w-50
+      h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
-      hr.my-1
+      hr.my-2
       - var _captions = captions.split('<spacing>')
       each caption in _captions
-        p.banner-text--caption.text-justify
+        p.section-text--caption.text-justify
           = caption
-    if image
-      img.d-none.d-md-flex.section--image.mr-auto(src=image, alt=title)
+    .d-none.d-md-flex.flex-column.w-50.mr-auto
+      if image
+        img.mr-auto.w-80(src=image, alt=title)
 
 mixin featured-left-align(image = null, title = null, captions)
   .d-flex.flex-row.align-items-center.px-5

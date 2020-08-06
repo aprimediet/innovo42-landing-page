@@ -10,7 +10,7 @@ $logo-height: 116px;
 
     &--left-align {
       background-image: url("images/banner-bg-splash6.png");
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
     }
   }
@@ -73,7 +73,7 @@ $logo-height: 116px;
 
     &-images {
       &--container {
-        height: 70%;
+        height: 65%;
       }
     }
 
