@@ -11,7 +11,7 @@
   "sitemap": [
     {
       "label": "About Us",
-      "href": "javascript:;"
+      "href": "about.html"
     },
     {
       "label": "Blog",

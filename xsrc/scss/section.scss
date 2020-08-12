@@ -1,4 +1,8 @@
 .section {
+  &--container {
+    width: 50% !important;
+  }
+
   &--underline {
     max-width: 18.75rem;
   }
@@ -10,7 +14,7 @@
 
     &--caption {
       font-size: 1.125rem;
-      line-height: 1.375rem;
+      line-height: 1.5;
       font-weight: 500;
     }
   }
@@ -28,10 +32,66 @@
   &--darker-bg {
     background-color: $featured-darker-bg;
   }
+
+  &--primary-bg {
+    background-color: $primary;
+  }
+
+  &--yellow-bg {
+    background-color: #C3CC14;
+  }
 }
 
 .featured {
   border-radius: 1rem;
+
+  &--photo {
+    &-left-frame {
+      border-top-left-radius: 1rem !important;
+      border-bottom-left-radius: 1rem !important;
+    }
+
+    &-right-frame {
+      border-top-right-radius: 1rem !important;
+      border-bottom-right-radius: 1rem !important;
+    }
+  }
+}
+
+@media(max-width: 36rem) {
+  .section {
+    &--container {
+      width: 100% !important;
+    }
+  }
+
+  .featured {
+    &--core-values {
+      width: 100% !important;
+    }
+  }
+}
+
+@media(max-width: 80rem) {
+  .section {
+    &--what-we-do {
+      width: 100% !important;
+    }
+  }
+
+  .featured {
+    &--photo {
+      &-left-frame {
+        border-radius: 1rem !important;
+        width: 100% !important;
+      }
+  
+      &-right-frame {
+        border-radius: 1rem !important;
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 @media(min-width: 120rem) {
@@ -60,7 +120,6 @@
     &-text {
       &--caption {
         font-size: 1.75rem;
-        line-height: 2rem;
       }
     }
 

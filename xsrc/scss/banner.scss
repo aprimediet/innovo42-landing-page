@@ -9,8 +9,14 @@ $logo-height: 116px;
     z-index: -1;
 
     &--left-align {
-      background-image: url("images/banner-bg-splash6.png");
+      background-image: url("images/banner-bg-splash-right.png");
       background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    &--right-align {
+      background-image: url("images/banner-bg-splash-left.png");
+      background-size: contain;
       background-repeat: no-repeat;
     }
   }
@@ -19,7 +25,6 @@ $logo-height: 116px;
     &--container {
       min-width: 55%;
       width: 55%;
-      height: 80%;
     }
   }
 
@@ -38,6 +43,10 @@ $logo-height: 116px;
       &-2 {
         font-size: 4.375rem;
         line-height: 3.4375rem;
+      }
+
+      &-3 {
+        font-size: 2.5rem;
       }
     }
 
@@ -60,6 +69,38 @@ $logo-height: 116px;
   }
 }
 
+@media (max-width: 20rem) {
+  .banner {
+    &-logo {
+      width: $logo-width / 2;
+      height: $logo-height / 2;
+    }
+
+    &-text {
+      &--title {
+        &-1 {
+          font-size: 2rem;
+          line-height: 2.125rem;
+        }
+  
+        &-2 {
+          font-size: 2.5rem;
+          line-height: 2.825rem;
+        }
+
+        &-3 {
+          font-size: 2rem;
+          line-height: 2.125rem;
+        }
+      }
+    }
+
+    &--wrapper {
+      margin-bottom: 60px !important;
+    }
+  }
+}
+
 @media (min-width: 120rem) {
   .banner {
     &-bg {
@@ -71,12 +112,6 @@ $logo-height: 116px;
       height: $logo-height * 1.5;
     }
 
-    &-images {
-      &--container {
-        height: 65%;
-      }
-    }
-
     &-text {
       &--title {
         &-1 {
@@ -86,6 +121,11 @@ $logo-height: 116px;
   
         &-2 {
           font-size: 5rem;
+          line-height: 4rem;
+        }
+
+        &-3 {
+          font-size: 3.5rem;
           line-height: 4rem;
         }
       }
@@ -121,6 +161,11 @@ $logo-height: 116px;
   
         &-2 {
           font-size: 6rem;
+          line-height: 5rem;
+        }
+
+        &-3 {
+          font-size: 4.5rem;
           line-height: 5rem;
         }
       }

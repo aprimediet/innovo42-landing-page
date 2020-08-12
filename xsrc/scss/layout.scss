@@ -12,18 +12,14 @@ body {
   height: calc(100% - 60px);
 }
 
-.px-10p {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.mx-10p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 .wrapper {
   margin-top: $header-height !important;
+}
+
+@media(max-width: 20rem) {
+  .wrapper {
+    margin-top: $header-height * 1.5 !important;
+  }
 }
 
 @media(min-width: 120rem) {

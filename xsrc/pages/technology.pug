@@ -15,7 +15,7 @@ block content
     'images/banner-tech.png',
     true,
     'javascript:;',
-    'TRY OUR PRODUCT!'
+    'TALK TO US'
   )
 
   .d-flex.flex-column.px-10p.align-items-center
@@ -86,4 +86,25 @@ block content
       `
     )
 
-    hr.my-3.my-xxl-4
+    hr.my-4.my-xxl-5
+
+  .d-flex.flex-column.px-10p.align-items-center
+    +section-title('Talk To Us')
+
+    hr.my-3
+
+    form.w-100(action='javascript:;')
+      .d-flex.flex-column.flex-md-row.my-4
+        input.form-control.rounded-pill.mx-2.px-3.py-4.btn-lg(type="text", placeholder="What is your first name?")
+        input.form-control.rounded-pill.mx-2.px-3.py-4.btn-lg(type="text", placeholder="What is your last name?")
+      .d-flex.flex-column.flex-md-row.my-4
+          input.form-control.rounded-pill.mx-2.px-3.py-4.btn-lg(type="text", placeholder="Your company email")
+          input.form-control.rounded-pill.mx-2.px-3.py-4.btn-lg(type="text", placeholder="Your phone number")
+      .d-flex.flex-column.flex-md-row.my-4
+        input.form-control.rounded-pill.mx-2.px-3.py-4.btn-lg(type="text", placeholder="What do you wish to enquire about?")
+      .d-flex.flex-column.flex-md-row.my-4
+        textarea.form-control.rounded.mx-2.px-3.py-4.btn-lg(type="text", rows="5", placeholder="How can we help?")
+      .d-flex.flex-column.flex-md-row.my-4.justify-content-center
+        button.btn.btn-primary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button GET IN TOUCH
+
+    hr.my-3

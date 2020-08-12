@@ -14,11 +14,23 @@ $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
   (
+    10: 10%,
+    20: 20%,
     25: 25%,
+    30: 30%,
+    33: 33%,
+    40: 40%,
+    45: 45%,
     50: 50%,
+    55: 55%,
     60: 60%,
+    65: 65%,
+    70: 70%,
     75: 75%,
     80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%,
     100: 100%,
     auto: auto
   ),
@@ -52,5 +64,29 @@ $container-max-widths: (
   xxl: 1440px,
   xr: 1920px
 ) !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    5p: 5%,
+    10p: 10%,
+    20p: 20%,
+    30p: 30%
+  ),
+  $spacers
+);
 
 $header-height: 60px;

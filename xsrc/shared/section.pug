@@ -5,37 +5,40 @@ mixin section-title(title=null)
     img.section--underline(src='images/section-title-line.png')
 
 mixin section-left-align(image = null, title = null, captions)
-  .d-flex.flex-row.align-items-center.px-5
-    .d-flex.flex-column.px-md-5.w-50
+  .d-flex.flex-column-reverse.flex-md-row.align-items-center.px-3.px-md-0
+    .d-flex.flex-column.pr-0.pr-md-5.w-50.section--container
       h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
       hr.my-2
       - var _captions = captions.split('<spacing>')
       each caption in _captions
-        p.banner-text--caption.text-justify
+        p.section-text--caption
           = caption
-    .d-none.d-md-flex.flex-column.w-50.ml-auto
+    .d-flex.flex-column.w-50.ml-0.ml-md-auto.section--container
       if image
-        img.w-80.ml-auto(src=image, alt=title)
+        hr.my-2.my-md-0
+        img.w-65.mx-auto.ml-md-auto(src=image, alt=title)
+        hr.my-2.my-md-0
 
 mixin section-right-align(image = null, title = null, captions)
-  .d-flex.flex-row-reverse.align-items-center.px-5
-    .d-flex.flex-column.px-md-5.w-50
+  .d-flex.flex-column-reverse.flex-md-row-reverse.align-items-center.px-3.px-md-0
+    .d-flex.flex-column.pl-0.pl-md-5.w-50.section--container
       h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
       hr.my-2
       - var _captions = captions.split('<spacing>')
       each caption in _captions
-        p.section-text--caption.text-justify
+        p.section-text--caption
           = caption
-    .d-none.d-md-flex.flex-column.w-50.mr-auto
+    .d-flex.flex-column.w-50.mr-0.mr-md-auto.section--container
       if image
-        img.mr-auto.w-80(src=image, alt=title)
+        img.w-65.mx-auto.mr-md-auto(src=image, alt=title)
+        hr.my-2.my-md-0
 
 mixin featured-left-align(image = null, title = null, captions)
   .d-flex.flex-row.align-items-center.px-5
     .d-flex.flex-column.pr-md-5
-      h3.fonts--arvo.text-secondary.section-text--subtitle
+      h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
       hr.my-1
       - var _captions = captions.split('<spacing>')
@@ -48,12 +51,25 @@ mixin featured-left-align(image = null, title = null, captions)
 mixin featured-right-align(image = null, title = null, captions)
   .d-flex.flex-row-reverse.align-items-center.p-5.section--darker-bg.shadow.featured
     .d-flex.flex-column.pl-md-5
-      h3.fonts--arvo.text-secondary.section-text--subtitle
+      h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
-      hr.my-1
+      hr.my-2
       - var _captions = captions.split('<spacing>')
       each caption in _captions
-        p.banner-text--caption.text-justify
+        p.banner-text--caption
           = caption
     if image
       img.d-none.d-md-flex.section--image.mr-auto(src=image, alt=title)
+
+mixin core-values(image = null, title = null, captions)
+  .d-flex.flex-column.w-33.align-items-center.px-md-3.py-4.featured--core-values
+    img.w-50(src=image, alt=title)
+
+    hr.my-2
+
+    h4.fonts--arvo.section--text-subtitle.text-secondary 
+      = title
+    hr.my-1
+
+    span.section--text-caption.text-center
+      = captions

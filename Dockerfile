@@ -20,6 +20,8 @@ RUN npm i -g yarn
 ADD . ./
 
 # INSTALL REQUIRED DEPENDENCIES
+# RUN yarn config set registry https://registry.npmjs.org
+# RUN yarn config list
 RUN yarn install --production=false && sleep 3 && \
     yarn build
 

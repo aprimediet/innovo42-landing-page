@@ -1,12 +1,16 @@
 .d-flex.flex-row.align-items-center.fixed-top.bg-white.px-10p.header--wrapper
   a.my-auto.mr-auto(href='index.html')
     img.my-auto.header--logo(src='images/innovo42-logo.png', alt='Innovo42')
-  nav.d-none.d-xl-flex.flex-row.align-items-center
+  nav.d-none.d-lg-flex.flex-row.align-items-center
     each link in sitemap
-      a.p-md-2.p-lg-4.p-xl-4.header-menu--item(href=link.href)
+      a.px-md-2.px-lg-4.py-md-4.header-menu--item(href=link.href)
         = link.label
-  nav.d-none.d-xl-flex.flex-row.align-items-center
+  nav.d-none.d-lg-flex.flex-row.align-items-center
     .mt-md-1.mt-lg-2.my-xl-auto.header--vertical-divider
-    a.p-md-2.p-lg-4.p-xl-4.header-menu--item.text-primary(href='javascript:;')
+    a.px-md-2.px-lg-4.py-md-4.header-menu--item.text-primary(href='javascript:;')
       | Contact Us
     button.px-5.py-1.mt-md-1.mt-xxl-n1.mt-xr-0.btn.btn-outline-primary.rounded-pill.btn-login(type='button') Log In
+  .d-flex.d-lg-none.align-items-center.justify-content-center.h-100
+    a.text-secondary(href='javascript:;')
+      i(data-feather="menu")
+      //- button.btn.btn-sm.btn-secondary.rounded-circle(type='button')
