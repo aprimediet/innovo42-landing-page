@@ -69,7 +69,7 @@ $logo-height: 116px;
   }
 }
 
-@media (max-width: 20rem) {
+@media (max-width: 26.5625rem) {
   .banner {
     &-logo {
       width: $logo-width / 2;
@@ -84,7 +84,7 @@ $logo-height: 116px;
         }
   
         &-2 {
-          font-size: 2.5rem;
+          font-size: 2.125rem;
           line-height: 2.825rem;
         }
 

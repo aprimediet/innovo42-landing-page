@@ -49,7 +49,7 @@ mixin featured-left-align(image = null, title = null, captions)
       img.d-none.d-md-flex.section--image.ml-auto(src=image, alt=title)
 
 mixin featured-right-align(image = null, title = null, captions)
-  .d-flex.flex-row-reverse.align-items-center.p-5.section--darker-bg.shadow.featured
+  .d-flex.flex-row-reverse.align-items-center.px-2.py-3.px-lg-5.py-lg-5.section--darker-bg.shadow.featured
     .d-flex.flex-column.pl-md-5
       h3.fonts--arvo.text-secondary.banner-text--subtitle.section-text--subtitle
         = title
@@ -73,3 +73,13 @@ mixin core-values(image = null, title = null, captions)
 
     span.section--text-caption.text-center
       = captions
+
+mixin cta(captions, includeButton = false, url = 'javascript:;', buttonText = null)
+  .d-flex.flex-column.justify-content-center.align-items-center.cta.text-center.px-5p
+    h3.fonts--arvo.banner-text--subtitle.text-white 
+      = captions
+    if includeButton
+      hr.my-3
+      a.mx-auto.mx-md-0(href=url)
+        button.btn.btn-primary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button
+          = buttonText

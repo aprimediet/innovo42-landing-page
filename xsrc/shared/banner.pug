@@ -1,6 +1,6 @@
 mixin main-banner-left-align(logo = null, titles, subtitle, captions, image = null, includeButton = false, buttonUrl = 'javascript:;', buttonLabel = null)
   .w-100.banner-bg.banner-bg--left-align
-  .d-flex.flex-row.w-100.px-0.px-5p.px-md-10p.align-items-center.banner--wrapper
+  .d-flex.flex-row.w-100.px-5p.px-md-10p.align-items-center.banner--wrapper
     .d-flex.flex-column.mr-auto
       //- LOGO AND TITLE
       .d-flex.flex-row
@@ -31,5 +31,5 @@ mixin main-banner-left-align(logo = null, titles, subtitle, captions, image = nu
 
     //- BANNER IMAGE
     if image
-      .d-none.d-xl-flex.flex-column.banner-images--container
-        img.w-100.h-100(src=image, alt=title)
+      .d-none.d-lg-flex.flex-column.banner-images--container
+        img.w-80.mx-auto(src=image, alt=title)

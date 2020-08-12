@@ -5,7 +5,7 @@ include ../shared/section.pug
 
 block content
   .w-100.banner-bg.banner-bg--right-align
-  .d-flex.flex-row.w-100.px-0.px-5p.px-md-10p.align-items-center.banner--wrapper
+  .d-flex.flex-row.w-100.px-5p.px-xl-10p.align-items-center.banner--wrapper
     //- TITLE
     .d-flex.flex-column.mr-auto.mw-100
       h1.fonts--arvo.text-secondary.banner-text--title-3.mx-0
@@ -13,68 +13,34 @@ block content
         span.text-primary efficiency.
 
     //- BANNER IMAGE
-    .d-none.d-xl-flex.flex-column.banner-images--container
-      img.w-100.h-100(src='images/banner-about.png', alt='About Us')
+    .d-none.d-lg-flex.flex-column.banner-images--container
+      img.w-80.mx-auto(src='images/banner-about.png', alt='About Us')
 
-  //- .d-flex.flex-column.px-10p.align-items-center
-  //-   hr.my-4
-
-  //-   +section-title('Our Mission')
-
-  //-   hr.my-3
-
-  //-   h4.fonts--arvo.text-secondary
-  //-     | We believe in digitizing tasks that take up time.
-
-  //-   hr.my-3
-
-  //-   .d-flex.flex-row.align-items-center
-  //-     .d-none.d-lg-flex.mr-auto.w-50.align-items-center.justify-content-center
-  //-       img.d-none.d-xl-flex.w-45(src='images/mission.png', alt='Our Mission')
-  //-     .d-flex.flex-column.w-50.justify-content-center
-  //-       p.banner-text--caption Our mission is to cut through the noise of inefficient expense and invoice management and empower businesses to have more efficient workflows, eliminating frustrating processes that take up time.
-
-  //-       p.banner-text--caption Because the digital space is evolving fast, we want to help individuals and teams change the way they work and speed up their productivity through automated tasks.
-
-  //-       p.banner-text--caption We believe that visibility, digitization, and automation allow you to become more productive, eliminate all friction and produce great results.
-
-  //-       p.banner-text--caption This is why, our two core products, Innovo Xpense and Innovo Invoice are here to help you simplify your expense and invoice management processes.
-
-  //-       p.banner-text--caption And for those who need quick integration, our API solution is available.
-
-  //- hr.my-5
-
-  .d-flex.flex-column.px-5p.px-md-10p.align-items-center.w-100
+  .d-flex.flex-column.px-5p.px-xl-10p.align-items-center.w-100
     hr.my-4
 
     +section-title('What We Do')
 
-    hr.my-4.my-xr-5
+    hr.my-5
 
     .d-flex.flex-row.align-items-center.w-100
-      .d-none.d-xl-flex.ml-auto.w-50.align-items-center.justify-content-center
-        img.w-45(src='images/mission.png', alt='Our Mission')
-      .d-flex.flex-column.justify-content-center.pl-lg-3.section--container.section--what-we-do
+      .d-none.d-md-flex.mr-auto.w-50.align-items-center.pl-5
+        img.w-50.mr-auto.ml-xl-5.image--mission(src='images/mission.png', alt='Our Mission')
+      .d-flex.flex-column.justify-content-center.pl-md-3.section--container.section--what-we-do
         p.banner-text--caption Our mission is to cut through the noise of inefficient expense and invoice management and empower businesses to have more efficient workflows, eliminating frustrating processes that take up time.
 
         p.banner-text--caption Our API solution which leverages machine learning and in-house algorithms helps companies extract key information from receipts and invoices putting an end to manual data extraction.
 
         p.banner-text--caption The extraction of receipt and invoice data will improve your user experience and enhance the process automation of your in-house expense management and accounting applications.
 
-        p.banner-text--caption Interested in giving it a try?
-
-        hr.my-3
-
-        a.mx-auto(href="javascript:;")
-          button.btn.btn-primary.rounded-pill.btn-lg.px-5.py-xl-1.py-xxl-3.banner--button Get In Touch With Us Now!
-
   hr.my-3.my-xl-5
+  hr.my-0.my-xl-4
 
-  .d-flex.flex-column.px-10p.align-items-center.w-100
+  .d-flex.flex-column.px-5p.px-xl-10p.align-items-center.w-100
     .d-flex.flex-row.w-100
-      .d-none.d-xl-flex.flex-row.border-top.border-left.border-bottom.w-30.justify-content-center.featured--photo-left-frame.shadow
+      .d-none.d-md-flex.flex-row.border-top.border-left.border-bottom.w-30.justify-content-center.align-items-end.featured--photo-left-frame.shadow
         img.w-95(src='images/colin.jpg')
-      .d-flex.flex-column.w-70.justify-content-center.px-5.py-5.section--primary-bg.featured--photo-right-frame.section--what-we-do
+      .d-flex.flex-column.w-70.justify-content-center.px-5.py-5.section--primary-bg.featured--photo-right-frame.section--what-we-do.shadow
         span.banner-text--caption.text-light “With Innovo42, we aim to provide innovative solutions that will help companies and their employees improve the way they carry out everyday tasks. By doing this, we target to enable employees to focus on the work that matters and to increase the efficiency of the companies using our solutions.”
 
         hr.my-3
@@ -95,17 +61,17 @@ block content
           | Rene Hess
           span.font-weight-normal , Co-Founder / Inventor
 
-      .d-none.d-xl-flex.flex-row.border-top.border-right.border-bottom.w-30.justify-content-center.featured--photo-right-frame.shadow
+      .d-none.d-md-flex.flex-row.border-top.border-right.border-bottom.w-30.justify-content-center.align-items-end.featured--photo-right-frame.shadow
         img.w-95(src='images/rene.jpg')
 
     hr.my-3.my-xl-5
 
-  .d-flex.flex-column.px-10p.align-items-center
+  .d-flex.flex-column.px-5p.px-xl-10p.align-items-center
     +section-title('Our Core Values')
 
     hr.my-3.my-xl-4
 
-    .d-flex.flex-column.flex-md-row.w-100.justify-content-md-center
+    .d-flex.flex-column.flex-md-row.w-100.align-items-center.align-items-md-start.justify-content-md-center
       +core-values(
         'images/core-transparent.png',
         'Be Transparent',
@@ -130,7 +96,7 @@ block content
         `
       )
 
-    .d-flex.flex-column.flex-md-row.w-100.justify-content-md-center
+    .d-flex.flex-column.flex-md-row.w-100.align-items-center.align-items-md-start.justify-content-md-center
       +core-values(
         'images/core-forward.png',
         'Be Forward-Thinking',
@@ -149,18 +115,12 @@ block content
   
   hr.my-3.my-xl-4
 
+  +cta(
+    'Interested in giving it a try?',
+    true,
+    'javascript:;',
+    'Get In Touch With Us Now!'
+  )
+
   .d-flex.w-100
     iframe.w-100(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.28664411907!2d103.8492068!3d1.2806884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87f1d80c825cc35d!2sInnovo42!5e0!3m2!1sid!2sid!4v1597219732775!5m2!1sid!2sid', width="100%", height="400", frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
-    //- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.28664411907!2d103.8492068!3d1.2806884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87f1d80c825cc35d!2sInnovo42!5e0!3m2!1sid!2sid!4v1597219732775!5m2!1sid!2sid" width="2560" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-      
-      //- .d-flex.flex-column.w-33.align-items-center
-      //-   img.w-50(src='images/core-transparent.png')
-
-      //-   hr.my-2
-
-      //-   h4.fonts--arvo.section--text-subtitle.text-secondary Be Transparent
-
-      //-   hr.my-1
-
-      //-   span.section--text-caption.text-center We believe in using transparency as a means to foster an environment of growth for our teammates and clients.
