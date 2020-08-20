@@ -1,18 +1,20 @@
 .cta {
-  min-height: 15.875rem;
+  min-height: 19.875rem;
   background-image: url('images/cta.png');
   background-position: center center;
   background-size: cover;
+  // padding-top: 5rem !important;
+  // padding-bottom: 5rem !important;
 }
 
 @media(min-width: 120rem) {
   .cta {
-    min-height: 17.875rem;
+    min-height: 21.875rem;
   }
 }
 
 @media(min-width: 160rem) {
   .cta {
-    min-height: 19.875rem;
+    min-height: 23.875rem;
   }
 }

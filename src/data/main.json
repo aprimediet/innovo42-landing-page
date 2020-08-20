@@ -10,20 +10,24 @@
   "playStoreLink": "https://play.google.com/store/apps/details?id=com.innovo42.www.skieexpenseapp",
   "sitemap": [
     {
-      "label": "About Us",
-      "href": "about.html"
-    },
-    {
-      "label": "Blog",
-      "href": "https://blog.innovo42.com"
+      "label": "API",
+      "href": "index.html"
     },
     {
       "label": "Technology",
       "href": "technology.html"
     },
     {
-      "label": "Resources",
+      "label": "API Documentation",
       "href": "javascript:;"
+    },
+    {
+      "label": "Blog",
+      "href": "https://blog.innovo42.com"
+    },
+    {
+      "label": "About Us",
+      "href": "about.html"
     }
   ]
 }

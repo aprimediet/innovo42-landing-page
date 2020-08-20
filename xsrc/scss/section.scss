@@ -17,6 +17,15 @@
       line-height: 1.5;
       font-weight: 500;
     }
+
+    &--caption-2 {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    &--caption-3 {
+      font-size: 0.9375rem;
+    }
   }
 
   &--image {
@@ -55,6 +64,10 @@
       border-top-right-radius: 1rem !important;
       border-bottom-right-radius: 1rem !important;
     }
+  }
+
+  &--cofounder {
+    font-weight: 500;
   }
 }
 

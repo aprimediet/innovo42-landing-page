@@ -1,60 +1,66 @@
-.d-flex.flex-column.px-10p.py-4.footer
-  .d-flex.flex-column.flex-lg-row
-    .d-flex.flex-column.pr-xl-5.pb-3.pb-xl-0
-      img.header--logo(src='images/innovo42-logo.png', alt='Innovo42')
-      hr.my-3
+.d-flex.flex-column.px-10p.py-4.footer.align-items-center
+  .d-flex.flex-column.flex-lg-row.w-100
+
+    .d-flex.flex-column.align-items-center.w-lg-33.w-100.pb-3.pb-xl-0
+      h4.fonts--arvo.section-text--caption SITEMAP
+      hr.my-2
+      each link in sitemap
+        a.footer--text.footer--text-link(href=link.href)
+          = link.label
+      a.footer--text.footer--text-link.py-2.px-xl-4(href="technology.html#contactform") Contact Us
+
+    .d-flex.flex-column.w-lg-25.w-100.pb-3.pb-xl-0.align-items-center
+      h4.fonts--arvo.section-text--caption CONTACT
+      hr.my-2
       .d-flex.flex-row.mb-2.align-items-center
         i.mr-2(data-feather="mail")
         span.footer--text info@innovo42.com
       .d-flex.flex-row.mb-2.align-items-center
         i.mr-2(data-feather="linkedin")
         span.footer--text /Innovo42
-      .d-flex.flex-row.mb-2
-        i.mr-2(data-feather="map-pin")
-        span.footer--text
-          | Innovo42 Pte. Ltd
-          br
-          | The Octagon, 11-17,
-          br
-          | 105 Cecil Street,
-          br
-          | Singapore 069534
-
-    .d-flex.flex-column.mr-lg-auto.w-lg-25.w-100.pb-3.pb-xl-0
-      a.footer--text.footer--text-link.py-2.px-xl-4(href="index.html") Home
-      each link in sitemap
-        a.footer--text.footer--text-link.py-2.px-xl-4(href=link.href)
-          = link.label
-      a.footer--text.footer--text-link.py-2.px-xl-4(href="javascript:;") Contact Us
-
-    .d-flex.flex-column.w-lg-25.w-100.pb-3.pb-xl-0
-      span.footer--text Get The Expense App!
       hr.my-2
-      img.footer--app-image(src='images/app-store.png', alt='Get on Apple Store')
-      hr.my-1
-      img.footer--app-image(src='images/googleplay.png', alt='Get on Google Play')
-
-    .d-flex.flex-column.w-lg-25.w-100.pb-3.pb-xl-0
-      span.footer--text Subscribe to our newsletter!
+      span.footer--text Follow Us
       hr.my-2
-      form
-        .form-group
-          input.form-control.rounded-pill(
-            type='email',
-            name='email',
-            placeholder='Enter your email address',
-            aria-describedBy='Email'
-          )
-        .form-group
-          button.btn.btn-primary.btn-block.rounded-pill SUBSCRIBE
-      hr.my-2
-      .d-flex.flex-column
-        span.footer--text Follow Us
-        hr.my-2
-        .d-flex.flex-row
-          i.mr-2(data-feather="linkedin")
-          i.mr-2(data-feather="twitter")
-          i.mr-2(data-feather="facebook")
+      .d-flex.flex-row
+        i.mr-2(data-feather="twitter")
+        i.mr-2(data-feather="facebook")
 
-  hr.my-5
+    .d-flex.flex-column.align-items-center.w-lg-33.w-100.pb-3.pb-xl-0
+      h4.fonts--arvo.section-text--caption ADDRESS
+      hr.my-2
+      //- .d-flex.flex-row.mb-2
+      //-   i.mr-2(data-feather="map-pin")
+      span.footer--text.text-center
+        | Innovo42 Pte. Ltd
+        br
+        | The Octagon, 11-17,
+        br
+        | 105 Cecil Street,
+        br
+        | Singapore 069534
+      //- .d-flex.flex-row.mb-2.align-items-center
+      //-   i.mr-2(data-feather="mail")
+      //-   span.footer--text info@innovo42.com
+      //- .d-flex.flex-row.mb-2.align-items-center
+      //-   i.mr-2(data-feather="linkedin")
+      //-   span.footer--text /Innovo42
+      //- .d-flex.flex-row.mb-2
+      //-   i.mr-2(data-feather="map-pin")
+      //-   span.footer--text
+      //-     | Innovo42 Pte. Ltd
+      //-     br
+      //-     | The Octagon, 11-17,
+      //-     br
+      //-     | 105 Cecil Street,
+      //-     br
+      //-     | Singapore 069534
+
+    //- .d-flex.flex-column.w-lg-25.w-100.pb-3.pb-xl-0
+    //-   span.footer--text Get The Expense App!
+    //-   hr.my-2
+    //-   img.footer--app-image(src='images/app-store.png', alt='Get on Apple Store')
+    //-   hr.my-1
+    //-   img.footer--app-image(src='images/googleplay.png', alt='Get on Google Play')
+
+  hr.my-4.my-xxl-5
   span.footer--text &copy; All Right Reserved 2019, Privacy Policy
