@@ -30,7 +30,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "postcss-assets": "^5.0.0",
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
